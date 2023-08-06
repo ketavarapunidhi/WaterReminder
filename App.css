@@ -1,0 +1,126 @@
+
+@font-face {
+  font-family: 'PlusJakartaText-Regular';
+  src: url('/public/PlusJakartaText-Regular.otf');
+}
+
+@font-face {
+  font-family: 'PlusJakartaDisplay-Bold';
+  src: url('/public/PlusJakartaDisplay-Bold.otf');
+}
+
+
+body {
+  background: #F3F1F5;
+  text-align: center;
+  padding: auto;
+}
+
+.container {
+  background: white;
+  border-radius: 25px;
+  align-items: centre;
+  margin: 150px 20px 150px 100px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display:block;
+  height:max-content;
+  padding:auto;
+}
+
+.grid-container {
+  display: grid;
+  align-content: center;
+}
+
+h1 {
+  padding-top: 40px;
+  font-family: 'PlusJakartaDisplay-Bold';
+  font-size: 50px;
+}
+
+img {
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  margin: 25px;
+  text-align: center;
+  border-style: solid;
+  width: 30%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  border-color: #F3F1F5;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #69F0AE;
+}
+
+textarea {
+  line-height: 1.2em;
+}
+
+
+button {
+  padding: 20px 70px;
+  outline: none;
+  margin: 40px;
+  background-color: #00E676;
+  border-style: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #69F0AE;
+}
+.stop-alarm {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.stop-alarm:hover {
+  background-color: #e64a19;
+}
+
+#location {
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 515px) {
+  .grid-container label {
+      font-size: 18px;
+  }
+  .grid-container input, .grid-container select, .grid-container textarea {
+      width: 80%;
+      font-size: 20px;
+  }
+  .container {
+      margin-bottom: 40px;
+  }
+  h1 {
+      font-size: 25px;
+      line-height: 40px;
+  }
+}
+
